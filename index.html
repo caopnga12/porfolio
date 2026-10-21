@@ -223,9 +223,9 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)documen
 document.addEventListener("click",e=>{const c=e.target.closest("[data-c]");if(!c)return;const v=c.dataset.v,o=c.textContent,done=m=>{c.textContent=m;setTimeout(()=>c.textContent=o,2500)};try{navigator.clipboard.writeText(v).then(()=>done(lg=="vi"?(c.dataset.k=="p"?"Đã sao chép số điện thoại ✓":"Đã sao chép email ✓"):(c.dataset.k=="p"?"Phone number copied ✓":"Email copied ✓")),()=>sel(c))}catch(x){sel(c)}});
 function sel(c){const r=document.createRange();r.selectNodeContents(c);const g=getSelection();g.removeAllRanges();g.addRange(r)}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(b)$("#tl").scrollBy({left:b.dataset.t*268,behavior:"smooth"})});
-const CAT={ppa:"sport",hanoi:"sport",move:"sport",nexx:"sport",charity:"sport",fac:"sport",cuon:"fnb",saep:"fnb",pepper:"fnb",tasty:"fnb",siamora:"fnb",samai:"fnb",amour:"hos",cofolia:"cos",sey:"fash",topica:"other"};
+const CAT={gabe:"sport",svn:"fnb",kbt:"fnb",ppa:"sport",hanoi:"sport",move:"sport",nexx:"sport",charity:"sport",fac:"sport",cuon:"fnb",saep:"fnb",pepper:"fnb",tasty:"fnb",siamora:"fnb",samai:"fnb",amour:"hos",cofolia:"cos",sey:"fash",topica:"other"};
 const SEC=[["feat",["Nổi bật","Featured"]],["sport",["Sport","Sport"]],["fnb",["F&B","F&B"]],["hos",["Hospitality","Hospitality"]],["cos",["Cosmetic","Cosmetic"]],["fash",["Fashion","Fashion"]],["other",["Khác","Other"]]];
-const secs=()=>SEC.map(([k,n])=>{const l=k=="feat"?FEAT.map(pr):P.filter(p=>CAT[p[0]]==k&&!FEAT.includes(p[0]));return l.length?`<h3 class="sh">${L(n)}<span>${l.length}</span></h3><div class="g">${l.map(pc).join("")}</div>`:""}).join("");
+const secs=()=>SEC.map(([k,n])=>{const l=k=="feat"?FEAT.map(pr):P.filter(p=>CAT[p[0]]==k);return l.length?`<h3 class="sh">${L(n)}<span>${l.length}</span></h3><div class="g">${l.map(pc).join("")}</div>`:""}).join("");
 function render(){const t=u();document.documentElement.lang=lg;
 $("#nv").innerHTML=["about","impact","journey","skills","projects","contact"].map((k,i)=>`<button data-g="${k}">${t.nav[i]}</button>`).join("");
 document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l==lg));
