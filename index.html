@@ -84,15 +84,13 @@ nav button.on{color:var(--ai);background:var(--ac)}
 .sf{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.sf h3{font-size:15px;color:var(--at);margin-right:6px}
 .sf span{padding:6px 14px;border-radius:99px;background:var(--sf2);border:1px solid var(--ln);font-size:14px;font-weight:500}
 .ans{color:var(--mu);margin:16px 0 0}
-.zz{list-style:none;margin:0;padding:0;position:relative}
-.zz::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:linear-gradient(var(--or),var(--ac));border-radius:4px}
-.zz>li{position:relative;width:50%;padding:0 36px 28px 0}
-.zz>li:nth-child(even){margin-left:50%;padding:0 0 28px 36px}
-.zz>li::before{content:"";position:absolute;top:22px;right:-9px;width:18px;height:18px;border-radius:50%;background:var(--sf);border:4px solid var(--or);z-index:1}
-.zz>li:nth-child(even)::before{right:auto;left:-9px}
-.zz>li.now::before{background:var(--or);box-shadow:0 0 0 6px rgba(240,138,36,.22)}
-.cd{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:18px 20px}
-.cd .y{font:800 22px Montserrat,sans-serif;letter-spacing:-.02em}.cd h3{font-size:16px;margin:2px 0}.cd .rl{font-size:13px;font-weight:600;color:var(--at);margin-bottom:8px}
+.zz{list-style:none;margin:0;padding:0 0 0 30px;position:relative}
+.zz::before{content:"";position:absolute;left:6px;top:14px;bottom:14px;width:3px;background:linear-gradient(var(--or),var(--ac));border-radius:3px}
+.zz>li{position:relative;margin-bottom:10px}
+.zz>li::before{content:"";position:absolute;left:-30px;top:23px;width:15px;height:15px;border-radius:50%;background:var(--sf);border:3px solid var(--or);z-index:1}
+.zz>li.now::before{background:var(--or);box-shadow:0 0 0 5px rgba(240,138,36,.22)}
+.cd{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:14px 18px}
+.cd .y{flex:0 0 112px;font:800 16px Montserrat,sans-serif;letter-spacing:-.02em}.cd .jc{flex:1;min-width:0}.cd h3{font-size:16px;margin:0}.cd .rl{font-size:13px;font-weight:600;color:var(--at);margin-top:2px}
 .cd ul{margin:0;padding-left:18px;font-size:14px;color:var(--mu)}.cd li{margin-bottom:3px}.cd ul.a li::marker{color:var(--or)}
 .cd h4{font:700 13px Montserrat,sans-serif;color:var(--at);margin:12px 0 4px}
 .hero{padding-bottom:24px}
@@ -109,6 +107,10 @@ html{color-scheme:light}
 .ca{margin-top:24px}
 .sh{display:flex;align-items:baseline;gap:10px;font-size:20px;margin:44px 0 16px}.sh span{font-size:13px;font-weight:500;color:var(--mu)}#pj .sh:first-child{margin-top:8px}
 .ed span{display:block}
+#journey .gl2{padding:16px 20px}#journey .gl2 p{font-size:14px}
+.c .ph{position:relative;overflow:hidden}.c .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gl a{display:block}.gl img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block}
+.gl:empty::before{content:attr(data-s);grid-column:1/-1;display:grid;place-items:center;padding:22px 12px;border-radius:10px;background:linear-gradient(135deg,#fff1a6,var(--ac));font-weight:700;font-size:13px;color:var(--ai)}
 .im .box b.lg{font-size:clamp(20px,5.4vw,36px);white-space:nowrap;line-height:1.5}
 .c.ft{border-color:var(--or);box-shadow:0 0 0 1px var(--or)}
 .bd{align-self:flex-start;margin-bottom:8px;padding:2px 10px;border-radius:99px;background:var(--ac);color:var(--ai);font-size:12px;font-weight:700}
@@ -120,8 +122,8 @@ html{color-scheme:light}
 .pn .pb h4{margin:0 0 6px}.pb p{margin:0;font-weight:500}
 @media(min-width:900px){#dv .pn{padding-left:52px;padding-right:52px}.pn h2{font-size:34px}.pn>p,.pn .bl{max-width:72ch}.mt{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}.gl .ph{font-size:13px}}
 .fl{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}.fl button{padding:9px 18px;border-radius:99px;border:1px solid var(--ln);background:var(--sf);font-weight:600;font-size:14px}.fl button span{color:var(--mu);margin-left:4px;font-weight:500}.fl button[aria-pressed=true]{background:var(--ac);color:var(--ai);border-color:var(--ac)}.fl button:hover{border-color:var(--ac)}
-.cd summary{list-style:none;cursor:pointer}.cd summary::-webkit-details-marker{display:none}
-.mo{display:inline-block;margin-top:6px;font-size:13px;font-weight:600;color:var(--at)}.mo::before{content:attr(data-m) " +"}details[open] .mo::before{content:attr(data-l) " −"}
+.cd summary{display:flex;align-items:center;gap:16px;list-style:none;cursor:pointer}.cd summary::-webkit-details-marker{display:none}
+.mo{flex:none;padding:6px 14px;border-radius:99px;background:var(--sf2);font-size:13px;font-weight:600;color:var(--at);white-space:nowrap}.cd .jp{color:var(--mu)}.mo::before{content:attr(data-m) " +"}details[open] .mo::before{content:attr(data-l) " −"}
 details[open]>summary{margin-bottom:12px}
 .im .box p:empty{display:none}
 .nm{font:700 20px Montserrat,sans-serif;margin:26px 0 6px}.cr{margin:14px 0}.cr span{display:block;font-size:13px;font-weight:600;color:var(--mu);margin-bottom:2px}
@@ -137,7 +139,7 @@ footer{padding:24px 0 40px;color:var(--mu);font-size:13px;border-top:1px solid v
 .gl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.gl .ph{font-size:12px;text-align:center;padding:6px;border-radius:8px}
 .mini{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--ln);border-radius:10px;margin-bottom:8px;text-decoration:none;background:var(--sf)}
 .mini:hover{border-color:var(--ac)}.mini .ph{width:84px;font-size:16px;flex:none;border-radius:6px}.mini b{font-family:Montserrat,sans-serif;font-size:15px}.mini small{display:block;color:var(--mu)}
-@media(max-width:720px){.ax{grid-template-columns:1fr}.disc{width:92px}.disc b{font-size:36px}.hg{gap:20px}.hero{padding-top:36px}.g.im{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.im .box{padding:14px}.im .box b{font-size:28px}.im .box h3{font-size:13px}.im .box p{font-size:12px;line-height:1.5}.ab{grid-template-columns:1fr;gap:20px}.st{grid-template-columns:repeat(2,1fr)}.st div:last-child{grid-column:span 2}.zz::before{left:10px}.zz>li,.zz>li:nth-child(even){width:100%;margin-left:0;padding:0 0 22px 34px}.zz>li::before,.zz>li:nth-child(even)::before{left:1px;right:auto}nav button:nth-child(2),nav button:nth-child(6){display:none}section{padding:48px 0}}
+@media(max-width:720px){.ax{grid-template-columns:1fr}.disc{width:92px}.disc b{font-size:36px}.hg{gap:20px}.hero{padding-top:36px}.g.im{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.im .box{padding:14px}.im .box b{font-size:28px}.im .box h3{font-size:13px}.im .box p{font-size:12px;line-height:1.5}.ab{grid-template-columns:1fr;gap:20px}.st{grid-template-columns:repeat(2,1fr)}.st div:last-child{grid-column:span 2}.cd summary{display:grid;grid-template-columns:1fr auto;gap:2px 12px}.cd .y{grid-column:1;grid-row:1;font-size:14px}.cd .mo{grid-column:2;grid-row:1;padding:5px 12px}.cd .jc{grid-column:1/-1;grid-row:2}.cd{padding:12px 14px}.zz{padding-left:26px}.zz>li::before{left:-26px;top:19px}.zz::before{left:4px}nav button:nth-child(2),nav button:nth-child(6){display:none}section{padding:48px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
 <header><div class="w"><button class="logo" data-g="top" aria-label="Top">CPN</button><nav id="nv"></nav>
@@ -197,8 +199,7 @@ amour:["Làm sao kể câu chuyện nghỉ dưỡng giữa thiên nhiên để c
 cofolia:["Làm sao biến nguyên liệu Sachi thành một thương hiệu mỹ phẩm hiện đại mà vẫn rất Việt?","How do you turn Sachi ingredients into a modern cosmetics brand that still feels Vietnamese?","Từ nguyên liệu Sachi, bài toán là nghiên cứu sản phẩm và xây concept thương hiệu mỹ phẩm theo hướng hiện đại, tối giản nhưng vẫn mang dấu ấn Việt Nam.","Starting from Sachi ingredients, the challenge was to research the product and build a cosmetics brand concept that is modern and minimal yet distinctly Vietnamese."]};
 for(const k in Q){P.find(q=>q[0]==k)[8]=Q[k]}
 P.push(["siamora","Siamora","",["Siamora","Siamora"],["Thông tin dự án đang được cập nhật.","Project details coming soon."],[],[]],
-["samai","Samai Thai","",["Samai Thai","Samai Thai"],["Thông tin dự án đang được cập nhật.","Project details coming soon."],[],[]],
-["sey","SEY Active","",["SEY Active","SEY Active"],["Thông tin dự án đang được cập nhật.","Project details coming soon."],[],[]]);
+["samai","Samai Thai","",["Samai Thai","Samai Thai"],["Thông tin dự án đang được cập nhật.","Project details coming soon."],[],[]]);
 const JT={"Facolos Pickleball":["g","pg0"],"SVN Group":["o","p-svn"],"Khrua Baan Thai (KBT)":["o","p-kbt"]};
 const JP=[["Đảm nhận vai trò quản lý Marketing, kết nối chiến lược, xây dựng đội ngũ, vận hành hệ thống và triển khai các chiến dịch thương hiệu, sản phẩm tại Việt Nam và hỗ trợ thị trường quốc tế.","Took on marketing management: connecting strategy, building the team, running systems and delivering brand and product campaigns in Vietnam while supporting international markets."],["Phát triển năng lực Marketing gắn với tăng trưởng thương mại qua hợp tác chiến lược, co-marketing, kích hoạt tại điểm bán và phân tích hiệu quả đối tác.","Grew marketing capability tied to commercial growth through strategic partnerships, co-marketing, in-store activation and partner performance analysis."],["Chuyển sâu hơn vào chiến lược thương hiệu, định vị, kế hoạch Marketing đa kênh, trade marketing và hoạt động thúc đẩy khách hàng tại điểm bán.","Moved deeper into brand strategy, positioning, multichannel plans, trade marketing and in-store customer activation."],["Mở rộng sang điều phối dự án Marketing, ra mắt sản phẩm, KOL, co-branding và thương mại điện tử; tập trung kết nối các bên liên quan và theo dõi hiệu quả kinh doanh.","Expanded into marketing project coordination, launches, KOL, co-branding and e-commerce, focusing on aligning stakeholders and tracking business results."],["Bắt đầu với quảng cáo số, KOL và các chiến dịch tạo doanh thu, xây nền tảng về triển khai kênh, theo dõi hiệu suất và tối ưu theo kết quả.","Started with digital ads, KOL and revenue campaigns, building a base in channel execution, performance tracking and results-based optimization."]];
 const J=[
@@ -215,17 +216,18 @@ const $=s=>document.querySelector(s),L=a=>a[lg=="vi"?0:1],u=()=>U[lg];
 const sk=id=>S.find(s=>s[0]==id),pr=id=>P.find(p=>p[0]==id);
 const ms=p=>p[6][0]?(lg=="vi"?p[6][0][0]+" "+p[6][0][2]:p[6][0][1]+" "+p[6][0][3]):"";
 const ini=t=>t.replace(/[^A-Za-z ]/g,"").split(" ").filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase()||"P";
-const FEAT=["gabe","svn","kbt"];
+const FEAT=["gabe","svn","move"];
 const lb=p=>[p[1],p[2]].filter(Boolean).join(" / ");
-const pc=p=>`<a class="c${FEAT.includes(p[0])?" ft":""}" href="#p-${p[0]}" data-o="p-${p[0]}"><div class="ph">${p[0].slice(0,2).toUpperCase()}</div><div class="b"><small>${lb(p)}</small><h3>${L(p[3])}</h3>${p[8]?`<div class="hk">${L(p[8])}</div>`:""}<p>${L(p[4])}</p><div class="ch">${p[5].map(s=>`<span>${L(sk(s)[1])}</span>`).join("")}</div>${p[8]?`<span class="cta">${u().cta}</span>`:""}</div></a>`;
+const pc=p=>`<a class="c${FEAT.includes(p[0])?" ft":""}" href="#p-${p[0]}" data-o="p-${p[0]}"><div class="ph">${p[0].slice(0,2).toUpperCase()}<img src="images/${p[0]}/cover.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div class="b"><small>${lb(p)}</small><h3>${L(p[3])}</h3>${p[8]?`<div class="hk">${L(p[8])}</div>`:""}<p>${L(p[4])}</p><div class="ch">${p[5].map(s=>`<span>${L(sk(s)[1])}</span>`).join("")}</div>${p[8]?`<span class="cta">${u().cta}</span>`:""}</div></a>`;
 const pg=$("#pg");addEventListener("scroll",()=>{const d=document.documentElement;pg.style.width=scrollY/Math.max(1,d.scrollHeight-innerHeight)*100+"%"},{passive:true});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll("#nv button").forEach(b=>b.classList.toggle("on",b.dataset.g==e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
 document.addEventListener("click",e=>{const c=e.target.closest("[data-c]");if(!c)return;const v=c.dataset.v,o=c.textContent,done=m=>{c.textContent=m;setTimeout(()=>c.textContent=o,2500)};try{navigator.clipboard.writeText(v).then(()=>done(lg=="vi"?(c.dataset.k=="p"?"Đã sao chép số điện thoại ✓":"Đã sao chép email ✓"):(c.dataset.k=="p"?"Phone number copied ✓":"Email copied ✓")),()=>sel(c))}catch(x){sel(c)}});
 function sel(c){const r=document.createRange();r.selectNodeContents(c);const g=getSelection();g.removeAllRanges();g.addRange(r)}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(b)$("#tl").scrollBy({left:b.dataset.t*268,behavior:"smooth"})});
-const CAT={gabe:"sport",svn:"fnb",kbt:"fnb",ppa:"sport",hanoi:"sport",move:"sport",nexx:"sport",charity:"sport",fac:"sport",cuon:"fnb",saep:"fnb",pepper:"fnb",tasty:"fnb",siamora:"fnb",samai:"fnb",amour:"hos",cofolia:"cos",sey:"fash",topica:"other"};
-const SEC=[["feat",["Nổi bật","Featured"]],["sport",["Sport","Sport"]],["fnb",["F&B","F&B"]],["hos",["Hospitality","Hospitality"]],["cos",["Cosmetic","Cosmetic"]],["fash",["Fashion","Fashion"]],["other",["Khác","Other"]]];
+const CAT={gabe:"sport",svn:"fnb",kbt:"fnb",ppa:"sport",hanoi:"sport",move:"sport",nexx:"sport",charity:"sport",fac:"sport",cuon:"fnb",saep:"fnb",pepper:"fnb",tasty:"fnb",siamora:"fnb",samai:"fnb",amour:"other",cofolia:"other",topica:"other"};
+const SEC=[["feat",["Nổi bật","Featured"]],["sport",["Sport","Sport"]],["fnb",["F&B","F&B"]],["other",["Khác","Other"]]];
 const secs=()=>SEC.map(([k,n])=>{const l=k=="feat"?FEAT.map(pr):P.filter(p=>CAT[p[0]]==k);return l.length?`<h3 class="sh">${L(n)}<span>${l.length}</span></h3><div class="g">${l.map(pc).join("")}</div>`:""}).join("");
+document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches(".zz details")&&d.open)document.querySelectorAll(".zz details[open]").forEach(x=>{if(x!==d)x.open=false})},true);
 function render(){const t=u();document.documentElement.lang=lg;
 $("#nv").innerHTML=["about","impact","journey","skills","projects","contact"].map((k,i)=>`<button data-g="${k}">${t.nav[i]}</button>`).join("");
 document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l==lg));
@@ -233,15 +235,15 @@ const cnt=k=>P.filter(p=>p[5].includes(k)).length,li=x=>`<li>${x}</li>`;
 $("#app").innerHTML=`<div class="hero" id="top"><div class="w"><div class="hg"><div class="disc" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="cp" d="M100 100m-86 0a86 86 0 1 1 172 0a86 86 0 1 1-172 0"/></defs><text textLength="535" lengthAdjust="spacing"><textPath href="#cp" textLength="535" lengthAdjust="spacing">BRAND ✦ GROWTH ✦ STORYTELLING ✦ DATA ✦ DESIGN ✦ </textPath></text></svg><b>N</b></div><div><h1>Cao Phương Nga</h1><svg class="sq" viewBox="0 0 260 14" fill="none" aria-hidden="true"><path d="M2 8c20-10 30 10 50 0s30 10 50 0 30 10 50 0 30 10 50 0 30 10 54 0" stroke="var(--or)" stroke-width="4" stroke-linecap="round"/></svg><div class="r">Brand Strategy · Integrated Marketing · Growth</div><p>${t.hero}</p><a class="btn" href="#projects" data-g="projects">${t.c1}</a><button class="btn o" data-g="contact">${t.c2}</button><a class="btn o" href="CV-Cao-Phuong-Nga.pdf" download>${t.cv}</a></div></div></div></div>
 <section id="about"><div class="w ab"><div><h2>${t.ab}</h2><p class="lead">${t.lead}</p></div><div>${t.ap.map(x=>`<p class="ap">${x}</p>`).join("")}<h3 class="ah">${t.axh}</h3><div class="ax">${t.ax.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join("")}</div><h3 class="ah">${t.edh}</h3><div class="ax ed">${t.ed.map(e=>`<div><b>${e[0]}</b>${e.slice(1).map(x=>`<span>${x}</span>`).join("")}</div>`).join("")}</div></div></div></section>
 <section id="impact"><div class="w"><h2>${t.im}</h2><p class="sub">${t.ims}</p><div class="g im">${t.imc.map(c=>`<div class="box"><b${c[0].length>8?' class="lg"':""}>${c[0]}</b><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join("")}</div><p class="note">${t.imn}</p></div></section>
-<section id="journey"><div class="w"><h2>${t.jt}</h2><p class="sub">${t.js}</p><ol class="zz">${J.map((j,i)=>`<li${i==0?' class="now"':""}><details class="cd"><summary><div class="y">${j[0]}</div><h3>${j[1]}</h3><div class="rl">${L(j[2])}</div><p class="jp">${L(JP[i])}</p><span class="mo" data-m="${t.more}" data-l="${t.less}"></span></summary><ul>${L(j[3]).map(li).join("")}</ul><h4>${t.ach}</h4><ul class="a">${L(j[4]).map(li).join("")}</ul>${JT[j[1]]?`<button class="lk" data-${JT[j[1]][0]}="${JT[j[1]][1]}">${t.view}</button>`:""}</details></li>`).join("")}</ol><div class="gl2" style="margin-top:8px"><p>${t.tht}</p></div></div></section>
-<section id="skills"><div class="w"><h2>${t.st2}</h2><p class="sub">${t.ss}</p><div class="g">${S.map(s=>`<a class="c sk" href="#s-${s[0]}" data-o="s-${s[0]}"><h3>${L(s[1])}</h3><ul class="bl">${L(s[3]).map(li).join("")}</ul><span class="n">${t.used} ${cnt(s[0])}${t.n}</span></a>`).join("")}</div></div></section>
+<section id="journey"><div class="w"><h2>${t.jt}</h2><p class="sub">${t.js}</p><ol class="zz">${J.map((j,i)=>`<li${i==0?' class="now"':""}><details class="cd"><summary><div class="y">${j[0]}</div><div class="jc"><h3>${j[1]}</h3><div class="rl">${L(j[2])}</div></div><span class="mo" data-m="${t.more}" data-l="${t.less}"></span></summary><p class="jp">${L(JP[i])}</p><ul>${L(j[3]).map(li).join("")}</ul><h4>${t.ach}</h4><ul class="a">${L(j[4]).map(li).join("")}</ul>${JT[j[1]]?`<button class="lk" data-${JT[j[1]][0]}="${JT[j[1]][1]}">${t.view}</button>`:""}</details></li>`).join("")}</ol><div class="gl2" style="margin-top:8px"><p>${t.tht}</p></div></div></section>
+<section id="skills"><div class="w"><h2>${t.st2}</h2><p class="sub">${t.ss}</p><div class="g">${S.map(s=>`<a class="c sk" href="#s-${s[0]}" data-o="s-${s[0]}"><h3>${L(s[1])}</h3><ul class="bl">${L(s[3]).map(li).join("")}</ul></a>`).join("")}</div></div></section>
 <section id="projects"><div class="w"><h2>${t.pt}</h2><p class="sub">${t.ps}</p><div id="pj">${secs()}</div></div></section>
 <section id="contact" class="ct"><div class="w"><h2>${t.ct}</h2><p class="sub">${t.cs}</p><p class="sub">${t.cs2}</p><h3 class="nm">CAO PHƯƠNG NGA (HAILEY CAO)</h3><div class="cr"><span>Email</span><button class="m" data-c data-v="${EM}">${EM}</button></div><div class="cr"><span>Phone / Zalo / WhatsApp</span><button class="m" data-c data-k="p" data-v="+84904946776">(+84) 90 494 6776</button></div><div class="ca"><a class="btn" href="mailto:${EM}">${t.cem}</a><a class="btn o" href="https://zalo.me/0904946776" target="_blank" rel="noopener">Zalo</a><a class="btn o" href="https://wa.me/84904946776" target="_blank" rel="noopener">WhatsApp</a><a class="btn o" href="CV-Cao-Phuong-Nga.pdf" download>${t.cv}</a></div></div></section>`;
 document.querySelectorAll("section").forEach(x=>io.observe(x));show(cur)}
 let cur="";
 function show(id){cur=id;const d=$("#dv"),t=u();if(!id){d.classList.remove("on");document.body.style.overflow="";return}
 const k=id.slice(2),isP=id[0]=="p";let h=`<button class="x" data-x>${t.cl}</button>`;
-if(isP){const p=pr(k);if(!p)return;h+=`<h2>${L(p[3])}</h2><div style="color:var(--mu)">${lb(p)}</div>${p[8]?`<div class="pb"><h4>${t.prob}</h4><p>${p[8][lg=="vi"?2:3]}</p></div>`:""}<p>${L(p[4])}</p>${p[7]?`<h4>${t.ctb}</h4><ul class="bl">${L(p[7]).map(x=>`<li>${x}</li>`).join("")}</ul>`:""}${p[6].length?`<h4>${t.res}</h4>`:""}<div class="mt">${p[6].map(m=>`<div><b>${lg=="vi"?m[0]:m[1]}</b><span>${lg=="vi"?m[2]:m[3]}</span></div>`).join("")}</div>${p[5].length?`<h4>${t.sks}</h4><div class="ch" style="margin:0">${p[5].map(s=>`<a href="#s-${s}" data-o="s-${s}">${L(sk(s)[1])}</a>`).join("")}</div>`:""}<h4>${t.img}</h4><div class="gl">${[1,2,3].map(()=>`<div class="ph">${t.soon}</div>`).join("")}</div>`}
+if(isP){const p=pr(k);if(!p)return;h+=`<h2>${L(p[3])}</h2><div style="color:var(--mu)">${lb(p)}</div>${p[8]?`<div class="pb"><h4>${t.prob}</h4><p>${p[8][lg=="vi"?2:3]}</p></div>`:""}<p>${L(p[4])}</p>${p[7]?`<h4>${t.ctb}</h4><ul class="bl">${L(p[7]).map(x=>`<li>${x}</li>`).join("")}</ul>`:""}${p[6].length?`<h4>${t.res}</h4>`:""}<div class="mt">${p[6].map(m=>`<div><b>${lg=="vi"?m[0]:m[1]}</b><span>${lg=="vi"?m[2]:m[3]}</span></div>`).join("")}</div>${p[5].length?`<h4>${t.sks}</h4><div class="ch" style="margin:0">${p[5].map(s=>`<a href="#s-${s}" data-o="s-${s}">${L(sk(s)[1])}</a>`).join("")}</div>`:""}<h4>${t.img}</h4><div class="gl" data-s="${t.soon}">${[1,2,3,4,5,6].map(n=>`<a href="images/${p[0]}/${n}.jpg" target="_blank" rel="noopener"><img src="images/${p[0]}/${n}.jpg" alt="${L(p[3])} ${n}" loading="lazy" onerror="this.parentNode.remove()"></a>`).join("")}</div>`}
 else{const s=sk(k);if(!s)return;const ps=P.filter(p=>p[5].includes(k));h+=`<h2>${L(s[1])}</h2><ul class="bl">${L(s[3]).map(x=>`<li>${x}</li>`).join("")}</ul><h4>${t.rel} (${ps.length})</h4>${ps.map(p=>`<a class="mini" href="#p-${p[0]}" data-o="p-${p[0]}"><div class="ph">${p[0].slice(0,2).toUpperCase()}</div><div><b>${L(p[3])}</b><small>${lb(p)}. ${ms(p)}</small></div></a>`).join("")}`}
 $("#pn").innerHTML=h;d.classList.add("on");document.body.style.overflow="hidden";$("#pn").scrollTop=0}
 function go(id){show(id)}
